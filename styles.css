@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+.bg{
+
+background-image: url(images/hero.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    min-height: 100vh;
+}
+
+body{
+
+  overflow-x: hidden;
+}
+.nav-link{
+
+    font-size: 1.5rem;
+}
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: white;
+    transition: width .7s;
+    }
+    
+    .nav-link:hover::after{
+    width: 100%;
+    transition:width .4s;
+    
+    
+    }
+.navbar-toggler{
+
+    outline: 0 !important;
+    border: none !important;
+    font-size: 2rem;
+}
+@media (max-width: 992px) {
+    .mobileMenu {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      position: fixed;
+      
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      -webkit-transition: all ease-in-out 0.35s;
+      transition: all ease-in-out 0.35s;
+      z-index: 1300;
+    }
+    .mobileMenu.open {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    .mobileMenu .navbar-nav {
+      overflow-y: auto;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+    .overlay.open {
+      display: block;
+      z-index: 1029;
+    }
+  }
+  .mt-7{
+
+    margin-top: 5rem;
+}
+
+@media (max-width: 992px) {
+    .bg-darkk{
+    
+        background-color:		#343a40;
+    
+    }
+}
+html{
+font-family:var(--body-font) ;
+    scroll-behavior: smooth;
+    color: var( --body-font-color);
+    font-size: 10px;
+}
+#header{
+
+    position: relative;
+  }
+  .header-text{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+  .secondary-text{
+font-family: var(--secondary-font);
+color: var(--secondary-font-color);   
+font-size: 8rem;
+letter-spacing: 2px;
+line-height: .5;
+  }
+  .first-letter{
+
+    font-size: 10rem;
+  }
+  .line{
+
+    width: 200px;
+    height: 7px;
+    background-color: #fff;
+  }
+  .p-text{
+      font-size: 1.4rem;
+letter-spacing: 2px;
+  }
+  .story-text{
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);  
+    font-size: 6rem;
+    line-height: .5;
+
+  }
+
+  .lead{
+font-size: 1.5rem;
+    font-family: var(--body-font) !important;
+  }
+
+  .story-link{
+color:  var(--secondary-font-color) !important; 
+text-decoration: underline !important;
+font-size: 2rem;
+  }
+  #showCase{
+background: url(images/tasteful-recipes.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 40vh;
+  }
+
+  .showcase-text{
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);  
+font-size: 5rem;
+line-height:.4 ;
+  }
+  .text-2{
+
+    letter-spacing: 2px;
+  }
+  #showCase-2{
+    background: url(images/perfect-blend.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+
+
+  }
+
+  .foot-ast{
+color: var(--secondary-font-color);
+
+  }
+
+  .foot-text{
+
+    letter-spacing: 2px;
+  }
+
+  .foot-p{
+
+    font-size: 1.5rem;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
